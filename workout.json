@@ -7,27 +7,25 @@
   "days": [
     {
       "day": 1,
-      "title": "Push – Upper Body",
+      "title": "Push",
       "type": "push",
       "icon": "💪",
       "warmup": [
-        { "name": "Arm Circles (Forward)", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Arm Circles (Backward)", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Shoulder Rolls", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Jumping Jacks", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Wrist Stretches", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Easy Push-ups", "type": "reps", "reps": 10, "sets": 1, "rest": 0 }
+        { "name": "Arm Circles",         "anim": "arm-circles",    "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Arm Circles (Reverse)","anim": "arm-circles",    "type": "timer", "duration": 30, "sets": 1, "rest": 0, "note": "Reverse direction" },
+        { "name": "Shoulder Rolls",       "anim": "shoulder-rolls", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Wrist Circles",        "anim": "wrist-circles",  "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Easy Push-ups",        "anim": "pushup",         "type": "reps",  "reps": 10, "sets": 1, "rest": 0 }
       ],
       "exercises": [
-        { "name": "Backpack Push-ups", "type": "reps", "sets": 4, "reps": 12, "rest": 60, "note": "8 kg backpack" },
-        { "name": "Pike Push-ups", "type": "reps", "sets": 3, "reps": 12, "rest": 60 },
-        { "name": "Diamond Push-ups", "type": "reps", "sets": 3, "reps": 12, "rest": 60 },
-        { "name": "Plank", "type": "timer", "sets": 2, "duration": 60, "rest": 60 }
+        { "name": "Backpack Push-ups",  "anim": "pushup",        "type": "reps", "sets": 4, "reps": 12, "rest": 60, "note": "8 kg backpack" },
+        { "name": "Pike Push-ups",      "anim": "pike-pushup",   "type": "reps", "sets": 3, "reps": 12, "rest": 60 },
+        { "name": "Diamond Push-ups",   "anim": "diamond-pushup","type": "reps", "sets": 3, "reps": 12, "rest": 60 },
+        { "name": "Plank",              "anim": "plank",         "type": "timer","sets": 2, "duration": 60, "rest": 60 }
       ],
       "cooldown": [
-        { "name": "Chest Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Shoulder Stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "30 sec each arm" },
-        { "name": "Triceps Stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "30 sec each arm" }
+        { "name": "Chest Stretch",    "anim": "chest-stretch",    "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
+        { "name": "Shoulder Stretch", "anim": "shoulder-stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "Each arm" }
       ]
     },
     {
@@ -36,21 +34,20 @@
       "type": "legs",
       "icon": "🦵",
       "warmup": [
-        { "name": "Walk/Jog in Place", "type": "timer", "duration": 120, "sets": 1, "rest": 0 },
-        { "name": "Leg Swings", "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "30 sec each leg" },
-        { "name": "Bodyweight Squats", "type": "reps", "reps": 15, "sets": 1, "rest": 0 },
-        { "name": "Hip Circles", "type": "timer", "duration": 60, "sets": 1, "rest": 0 }
+        { "name": "Walk in Place",       "anim": "walk",        "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
+        { "name": "Leg Swings",          "anim": "leg-swing",   "type": "reps",  "reps": 10, "sets": 1, "rest": 0, "note": "Each leg" },
+        { "name": "Bodyweight Squats",   "anim": "squat",       "type": "reps",  "reps": 10, "sets": 1, "rest": 0 },
+        { "name": "Hip Circles",         "anim": "hip-circles", "type": "reps",  "reps": 10, "sets": 1, "rest": 0, "note": "Each direction" }
       ],
       "exercises": [
-        { "name": "Backpack Squats", "type": "reps", "sets": 4, "reps": 18, "rest": 60, "note": "8 kg backpack" },
-        { "name": "Bulgarian Split Squats", "type": "reps", "sets": 3, "reps": 10, "rest": 60, "note": "Each leg" },
-        { "name": "Lunges", "type": "reps", "sets": 3, "reps": 12, "rest": 60, "note": "Each leg" },
-        { "name": "Calf Raises", "type": "reps", "sets": 4, "reps": 20, "rest": 45 }
+        { "name": "Backpack Squats",       "anim": "squat",       "type": "reps", "sets": 4, "reps": 18, "rest": 60, "note": "8 kg backpack" },
+        { "name": "Bulgarian Split Squats","anim": "split-squat", "type": "reps", "sets": 3, "reps": 10, "rest": 60, "note": "Each leg" },
+        { "name": "Lunges",               "anim": "lunge",        "type": "reps", "sets": 3, "reps": 12, "rest": 60, "note": "Each leg" },
+        { "name": "Calf Raises",          "anim": "calf-raise",   "type": "reps", "sets": 4, "reps": 20, "rest": 45 }
       ],
       "cooldown": [
-        { "name": "Quad Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Hamstring Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Calf Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 }
+        { "name": "Quad Stretch",       "anim": "quad-stretch",       "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "Each leg" },
+        { "name": "Hamstring Stretch",  "anim": "hamstring-stretch",  "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "Each leg" }
       ]
     },
     {
@@ -59,16 +56,18 @@
       "type": "cardio",
       "icon": "🚴",
       "warmup": [
-        { "name": "Walk", "type": "timer", "duration": 300, "sets": 1, "rest": 0 }
+        { "name": "Easy Cycling / Walking", "anim": "cycling", "type": "timer", "duration": 180, "sets": 1, "rest": 0, "note": "3 minutes" }
       ],
       "exercises": [
-        { "name": "Cycling", "type": "timer", "sets": 1, "duration": 2400, "rest": 0, "note": "40 minutes" },
-        { "name": "Leg Raises", "type": "reps", "sets": 3, "reps": 15, "rest": 45 },
-        { "name": "Side Plank (Left)", "type": "timer", "sets": 2, "duration": 40, "rest": 30 },
-        { "name": "Side Plank (Right)", "type": "timer", "sets": 2, "duration": 40, "rest": 30 }
+        { "name": "Cycling",          "anim": "cycling",       "type": "timer", "sets": 1, "duration": 2400, "rest": 0, "note": "40 minutes" },
+        { "name": "Leg Raises",       "anim": "leg-raise",     "type": "reps",  "sets": 3, "reps": 15, "rest": 45 },
+        { "name": "Side Plank Left",  "anim": "side-plank",    "type": "timer", "sets": 1, "duration": 40, "rest": 30 },
+        { "name": "Side Plank Right", "anim": "side-plank-r",  "type": "timer", "sets": 1, "duration": 40, "rest": 30 },
+        { "name": "Side Plank Left",  "anim": "side-plank",    "type": "timer", "sets": 1, "duration": 40, "rest": 30 },
+        { "name": "Side Plank Right", "anim": "side-plank-r",  "type": "timer", "sets": 1, "duration": 40, "rest": 0  }
       ],
       "cooldown": [
-        { "name": "Full Body Stretch", "type": "timer", "duration": 600, "sets": 1, "rest": 0 }
+        { "name": "Full Body Stretch", "anim": "stretch", "type": "timer", "duration": 600, "sets": 1, "rest": 0, "note": "10 minutes" }
       ]
     },
     {
@@ -77,23 +76,21 @@
       "type": "push",
       "icon": "🔥",
       "warmup": [
-        { "name": "Arm Circles (Forward)", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Arm Circles (Backward)", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Shoulder Rolls", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Jumping Jacks", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Wrist Stretches", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Easy Push-ups", "type": "reps", "reps": 10, "sets": 1, "rest": 0 }
+        { "name": "Arm Circles",          "anim": "arm-circles",    "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Arm Circles (Reverse)","anim": "arm-circles",    "type": "timer", "duration": 30, "sets": 1, "rest": 0, "note": "Reverse direction" },
+        { "name": "Shoulder Rolls",        "anim": "shoulder-rolls", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Wrist Circles",         "anim": "wrist-circles",  "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Easy Push-ups",         "anim": "pushup",         "type": "reps",  "reps": 10, "sets": 1, "rest": 0 }
       ],
       "exercises": [
-        { "name": "Backpack Push-ups", "type": "reps", "sets": 5, "reps": 10, "rest": 60, "note": "8 kg backpack" },
-        { "name": "Decline Push-ups", "type": "reps", "sets": 3, "reps": 10, "rest": 60 },
-        { "name": "Pike Push-ups", "type": "reps", "sets": 4, "reps": 10, "rest": 60 },
-        { "name": "Plank", "type": "timer", "sets": 2, "duration": 60, "rest": 60 }
+        { "name": "Backpack Push-ups", "anim": "pushup",        "type": "reps", "sets": 5, "reps": 10, "rest": 60, "note": "8 kg backpack" },
+        { "name": "Decline Push-ups",  "anim": "decline-pushup","type": "reps", "sets": 3, "reps": 10, "rest": 60 },
+        { "name": "Pike Push-ups",     "anim": "pike-pushup",   "type": "reps", "sets": 4, "reps": 10, "rest": 60 },
+        { "name": "Plank",             "anim": "plank",         "type": "timer","sets": 2, "duration": 60, "rest": 60 }
       ],
       "cooldown": [
-        { "name": "Chest Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Shoulder Stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Triceps Stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0 }
+        { "name": "Chest Stretch",    "anim": "chest-stretch",    "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
+        { "name": "Shoulder Stretch", "anim": "shoulder-stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "Each arm" }
       ]
     },
     {
@@ -102,21 +99,20 @@
       "type": "legs",
       "icon": "⚡",
       "warmup": [
-        { "name": "Walk/Jog in Place", "type": "timer", "duration": 120, "sets": 1, "rest": 0 },
-        { "name": "Leg Swings", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Bodyweight Squats", "type": "reps", "reps": 15, "sets": 1, "rest": 0 },
-        { "name": "Hip Circles", "type": "timer", "duration": 60, "sets": 1, "rest": 0 }
+        { "name": "Walk in Place",     "anim": "walk",        "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
+        { "name": "Leg Swings",        "anim": "leg-swing",   "type": "reps",  "reps": 10, "sets": 1, "rest": 0, "note": "Each leg" },
+        { "name": "Bodyweight Squats", "anim": "squat",       "type": "reps",  "reps": 10, "sets": 1, "rest": 0 },
+        { "name": "Hip Circles",       "anim": "hip-circles", "type": "reps",  "reps": 10, "sets": 1, "rest": 0, "note": "Each direction" }
       ],
       "exercises": [
-        { "name": "Backpack Squats", "type": "reps", "sets": 5, "reps": 18, "rest": 60, "note": "8 kg backpack" },
-        { "name": "Bulgarian Split Squats", "type": "reps", "sets": 4, "reps": 10, "rest": 60, "note": "Each leg" },
-        { "name": "Lunges", "type": "reps", "sets": 3, "reps": 12, "rest": 60, "note": "Each leg" },
-        { "name": "Calf Raises", "type": "reps", "sets": 5, "reps": 20, "rest": 45 }
+        { "name": "Backpack Squats",        "anim": "squat",       "type": "reps", "sets": 5, "reps": 18, "rest": 60, "note": "8 kg backpack" },
+        { "name": "Bulgarian Split Squats", "anim": "split-squat", "type": "reps", "sets": 4, "reps": 10, "rest": 60, "note": "Each leg" },
+        { "name": "Lunges",                 "anim": "lunge",       "type": "reps", "sets": 3, "reps": 12, "rest": 60, "note": "Each leg" },
+        { "name": "Calf Raises",            "anim": "calf-raise",  "type": "reps", "sets": 5, "reps": 20, "rest": 45 }
       ],
       "cooldown": [
-        { "name": "Quad Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Hamstring Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Calf Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 }
+        { "name": "Quad Stretch",      "anim": "quad-stretch",      "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "Each leg" },
+        { "name": "Hamstring Stretch", "anim": "hamstring-stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "Each leg" }
       ]
     },
     {
@@ -126,8 +122,8 @@
       "icon": "🧘",
       "warmup": [],
       "exercises": [
-        { "name": "Walk", "type": "timer", "sets": 1, "duration": 1800, "rest": 0, "note": "30 minutes" },
-        { "name": "Full Body Stretch", "type": "timer", "sets": 1, "duration": 900, "rest": 0, "note": "15 minutes" }
+        { "name": "Walk",              "anim": "walk",    "type": "timer", "sets": 1, "duration": 1800, "rest": 0, "note": "30 minutes" },
+        { "name": "Full Body Stretch", "anim": "stretch", "type": "timer", "sets": 1, "duration": 900,  "rest": 0, "note": "15 minutes" }
       ],
       "cooldown": []
     },
@@ -138,7 +134,7 @@
       "icon": "😴",
       "warmup": [],
       "exercises": [
-        { "name": "Rest & Recover", "type": "timer", "sets": 1, "duration": 60, "rest": 0, "note": "Drink water, sleep 7–9 hours" }
+        { "name": "Rest & Recover", "anim": "rest", "type": "timer", "sets": 1, "duration": 60, "rest": 0, "note": "Drink water · Sleep 7–9 hours" }
       ],
       "cooldown": []
     },
@@ -148,14 +144,14 @@
       "type": "cardio",
       "icon": "🚴",
       "warmup": [
-        { "name": "Walk", "type": "timer", "duration": 300, "sets": 1, "rest": 0 }
+        { "name": "Easy Cycling / Walking", "anim": "cycling", "type": "timer", "duration": 180, "sets": 1, "rest": 0, "note": "3 minutes" }
       ],
       "exercises": [
-        { "name": "Cycling", "type": "timer", "sets": 1, "duration": 2400, "rest": 0, "note": "40 minutes" },
-        { "name": "Mountain Climbers", "type": "timer", "sets": 3, "duration": 30, "rest": 45 }
+        { "name": "Cycling",           "anim": "cycling",          "type": "timer", "sets": 1, "duration": 2100, "rest": 0,  "note": "35 minutes" },
+        { "name": "Mountain Climbers", "anim": "mountain-climber", "type": "timer", "sets": 3, "duration": 30,   "rest": 45 }
       ],
       "cooldown": [
-        { "name": "Full Body Stretch", "type": "timer", "duration": 600, "sets": 1, "rest": 0 }
+        { "name": "Full Body Stretch", "anim": "stretch", "type": "timer", "duration": 600, "sets": 1, "rest": 0, "note": "10 minutes" }
       ]
     },
     {
@@ -164,20 +160,19 @@
       "type": "full",
       "icon": "🏋️",
       "warmup": [
-        { "name": "Walk", "type": "timer", "duration": 120, "sets": 1, "rest": 0 },
-        { "name": "Arm Circles", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Bodyweight Squats", "type": "reps", "reps": 15, "sets": 1, "rest": 0 },
-        { "name": "Easy Push-ups", "type": "reps", "reps": 10, "sets": 1, "rest": 0 }
+        { "name": "Walk in Place",     "anim": "walk",        "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
+        { "name": "Arm Circles",       "anim": "arm-circles", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Bodyweight Squats", "anim": "squat",       "type": "reps",  "reps": 10, "sets": 1, "rest": 0 },
+        { "name": "Easy Push-ups",     "anim": "pushup",      "type": "reps",  "reps": 10, "sets": 1, "rest": 0 }
       ],
       "exercises": [
-        { "name": "Push-ups", "type": "reps", "sets": 3, "reps": 12, "rest": 60 },
-        { "name": "Squats", "type": "reps", "sets": 3, "reps": 15, "rest": 60 },
-        { "name": "Plank", "type": "timer", "sets": 2, "duration": 60, "rest": 60 }
+        { "name": "Push-ups", "anim": "pushup", "type": "reps", "sets": 3, "reps": 12, "rest": 60 },
+        { "name": "Squats",   "anim": "squat",  "type": "reps", "sets": 3, "reps": 15, "rest": 60 },
+        { "name": "Plank",    "anim": "plank",  "type": "timer","sets": 2, "duration": 60, "rest": 60 }
       ],
       "cooldown": [
-        { "name": "Chest Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Hamstring Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Calf Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 }
+        { "name": "Chest Stretch",     "anim": "chest-stretch",     "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
+        { "name": "Hamstring Stretch", "anim": "hamstring-stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0 }
       ]
     },
     {
@@ -187,34 +182,32 @@
       "icon": "🧘",
       "warmup": [],
       "exercises": [
-        { "name": "Walk", "type": "timer", "sets": 1, "duration": 1800, "rest": 0, "note": "30 minutes" },
-        { "name": "Full Body Stretch", "type": "timer", "sets": 1, "duration": 900, "rest": 0, "note": "15 minutes" }
+        { "name": "Walk",              "anim": "walk",    "type": "timer", "sets": 1, "duration": 1800, "rest": 0, "note": "30 minutes" },
+        { "name": "Full Body Stretch", "anim": "stretch", "type": "timer", "sets": 1, "duration": 900,  "rest": 0, "note": "15 minutes" }
       ],
       "cooldown": []
     },
     {
       "day": 11,
-      "title": "Push – Upper Body",
+      "title": "Push",
       "type": "push",
       "icon": "💪",
       "warmup": [
-        { "name": "Arm Circles (Forward)", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Arm Circles (Backward)", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Shoulder Rolls", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Jumping Jacks", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Wrist Stretches", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Easy Push-ups", "type": "reps", "reps": 10, "sets": 1, "rest": 0 }
+        { "name": "Arm Circles",          "anim": "arm-circles",    "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Arm Circles (Reverse)","anim": "arm-circles",    "type": "timer", "duration": 30, "sets": 1, "rest": 0, "note": "Reverse direction" },
+        { "name": "Shoulder Rolls",        "anim": "shoulder-rolls", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Wrist Circles",         "anim": "wrist-circles",  "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
+        { "name": "Easy Push-ups",         "anim": "pushup",         "type": "reps",  "reps": 10, "sets": 1, "rest": 0 }
       ],
       "exercises": [
-        { "name": "Backpack Push-ups", "type": "reps", "sets": 4, "reps": 12, "rest": 60, "note": "8 kg backpack" },
-        { "name": "Pike Push-ups", "type": "reps", "sets": 3, "reps": 12, "rest": 60 },
-        { "name": "Diamond Push-ups", "type": "reps", "sets": 3, "reps": 12, "rest": 60 },
-        { "name": "Plank", "type": "timer", "sets": 2, "duration": 60, "rest": 60 }
+        { "name": "Backpack Push-ups", "anim": "pushup",        "type": "reps", "sets": 4, "reps": 12, "rest": 60, "note": "8 kg backpack" },
+        { "name": "Pike Push-ups",     "anim": "pike-pushup",   "type": "reps", "sets": 3, "reps": 12, "rest": 60 },
+        { "name": "Diamond Push-ups",  "anim": "diamond-pushup","type": "reps", "sets": 3, "reps": 12, "rest": 60 },
+        { "name": "Plank",             "anim": "plank",         "type": "timer","sets": 2, "duration": 60, "rest": 60 }
       ],
       "cooldown": [
-        { "name": "Chest Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Shoulder Stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Triceps Stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0 }
+        { "name": "Chest Stretch",    "anim": "chest-stretch",    "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
+        { "name": "Shoulder Stretch", "anim": "shoulder-stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "Each arm" }
       ]
     },
     {
@@ -223,21 +216,20 @@
       "type": "legs",
       "icon": "🦵",
       "warmup": [
-        { "name": "Walk/Jog in Place", "type": "timer", "duration": 120, "sets": 1, "rest": 0 },
-        { "name": "Leg Swings", "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
-        { "name": "Bodyweight Squats", "type": "reps", "reps": 15, "sets": 1, "rest": 0 },
-        { "name": "Hip Circles", "type": "timer", "duration": 60, "sets": 1, "rest": 0 }
+        { "name": "Walk in Place",     "anim": "walk",        "type": "timer", "duration": 60, "sets": 1, "rest": 0 },
+        { "name": "Leg Swings",        "anim": "leg-swing",   "type": "reps",  "reps": 10, "sets": 1, "rest": 0, "note": "Each leg" },
+        { "name": "Bodyweight Squats", "anim": "squat",       "type": "reps",  "reps": 10, "sets": 1, "rest": 0 },
+        { "name": "Hip Circles",       "anim": "hip-circles", "type": "reps",  "reps": 10, "sets": 1, "rest": 0, "note": "Each direction" }
       ],
       "exercises": [
-        { "name": "Backpack Squats", "type": "reps", "sets": 4, "reps": 18, "rest": 60, "note": "8 kg backpack" },
-        { "name": "Bulgarian Split Squats", "type": "reps", "sets": 3, "reps": 10, "rest": 60, "note": "Each leg" },
-        { "name": "Lunges", "type": "reps", "sets": 3, "reps": 12, "rest": 60, "note": "Each leg" },
-        { "name": "Calf Raises", "type": "reps", "sets": 4, "reps": 20, "rest": 45 }
+        { "name": "Backpack Squats",        "anim": "squat",       "type": "reps", "sets": 4, "reps": 18, "rest": 60, "note": "8 kg backpack" },
+        { "name": "Bulgarian Split Squats", "anim": "split-squat", "type": "reps", "sets": 3, "reps": 10, "rest": 60, "note": "Each leg" },
+        { "name": "Lunges",                 "anim": "lunge",       "type": "reps", "sets": 3, "reps": 12, "rest": 60, "note": "Each leg" },
+        { "name": "Calf Raises",            "anim": "calf-raise",  "type": "reps", "sets": 4, "reps": 20, "rest": 45 }
       ],
       "cooldown": [
-        { "name": "Quad Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Hamstring Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 },
-        { "name": "Calf Stretch", "type": "timer", "duration": 30, "sets": 1, "rest": 0 }
+        { "name": "Quad Stretch",      "anim": "quad-stretch",      "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "Each leg" },
+        { "name": "Hamstring Stretch", "anim": "hamstring-stretch", "type": "timer", "duration": 60, "sets": 1, "rest": 0, "note": "Each leg" }
       ]
     },
     {
@@ -246,16 +238,18 @@
       "type": "cardio",
       "icon": "🚴",
       "warmup": [
-        { "name": "Walk", "type": "timer", "duration": 300, "sets": 1, "rest": 0 }
+        { "name": "Easy Cycling / Walking", "anim": "cycling", "type": "timer", "duration": 180, "sets": 1, "rest": 0, "note": "3 minutes" }
       ],
       "exercises": [
-        { "name": "Cycling", "type": "timer", "sets": 1, "duration": 2400, "rest": 0, "note": "40 minutes" },
-        { "name": "Leg Raises", "type": "reps", "sets": 3, "reps": 15, "rest": 45 },
-        { "name": "Side Plank (Left)", "type": "timer", "sets": 2, "duration": 40, "rest": 30 },
-        { "name": "Side Plank (Right)", "type": "timer", "sets": 2, "duration": 40, "rest": 30 }
+        { "name": "Cycling",          "anim": "cycling",      "type": "timer", "sets": 1, "duration": 2400, "rest": 0, "note": "40 minutes" },
+        { "name": "Leg Raises",       "anim": "leg-raise",    "type": "reps",  "sets": 3, "reps": 15, "rest": 45 },
+        { "name": "Side Plank Left",  "anim": "side-plank",   "type": "timer", "sets": 1, "duration": 40, "rest": 30 },
+        { "name": "Side Plank Right", "anim": "side-plank-r", "type": "timer", "sets": 1, "duration": 40, "rest": 30 },
+        { "name": "Side Plank Left",  "anim": "side-plank",   "type": "timer", "sets": 1, "duration": 40, "rest": 30 },
+        { "name": "Side Plank Right", "anim": "side-plank-r", "type": "timer", "sets": 1, "duration": 40, "rest": 0  }
       ],
       "cooldown": [
-        { "name": "Full Body Stretch", "type": "timer", "duration": 600, "sets": 1, "rest": 0 }
+        { "name": "Full Body Stretch", "anim": "stretch", "type": "timer", "duration": 600, "sets": 1, "rest": 0, "note": "10 minutes" }
       ]
     },
     {
@@ -265,8 +259,8 @@
       "icon": "🧘",
       "warmup": [],
       "exercises": [
-        { "name": "Walk", "type": "timer", "sets": 1, "duration": 1800, "rest": 0, "note": "30 minutes" },
-        { "name": "Full Body Stretch", "type": "timer", "sets": 1, "duration": 900, "rest": 0, "note": "15 minutes" }
+        { "name": "Walk",              "anim": "walk",    "type": "timer", "sets": 1, "duration": 1800, "rest": 0, "note": "30 minutes" },
+        { "name": "Full Body Stretch", "anim": "stretch", "type": "timer", "sets": 1, "duration": 900,  "rest": 0, "note": "15 minutes" }
       ],
       "cooldown": []
     }

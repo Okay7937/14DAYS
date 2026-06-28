@@ -376,22 +376,45 @@ body {
   gap: 16px;
 }
 
-.exercise-icon-wrap {
-  width: 72px; height: 72px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), #a78bfa);
+/* Exercise SVG animation container */
+.exercise-anim-wrap {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+  filter: drop-shadow(0 0 18px rgba(108,99,255,0.5));
+}
+.exercise-anim-wrap svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* prep-countdown overlay (shown before timer starts) */
+.prep-overlay {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
-  box-shadow: var(--shadow-glow);
-  margin: 0 auto;
-  animation: iconPulse 3s ease-in-out infinite;
+  background: rgba(10,10,15,0.75);
+  border-radius: 50%;
+  font-size: 56px;
+  font-weight: 900;
+  color: #fff;
+  z-index: 10;
+  animation: prepPop 0.25s ease both;
 }
-@keyframes iconPulse {
-  0%, 100% { transform: scale(1); box-shadow: 0 0 24px rgba(108,99,255,0.4); }
-  50%       { transform: scale(1.06); box-shadow: 0 0 40px rgba(108,99,255,0.65); }
+@keyframes prepPop {
+  from { transform: scale(1.4); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
 }
+
+/* Stickman shared colours */
+.sk-skin   { fill: none; stroke: #a78bfa; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.sk-ground { stroke: rgba(255,255,255,0.15); stroke-width: 2; }
+.sk-accent { stroke: #6c63ff; }
+.sk-fill   { fill: #a78bfa; stroke: none; }
 
 .exercise-info { text-align: center; }
 .exercise-name {
